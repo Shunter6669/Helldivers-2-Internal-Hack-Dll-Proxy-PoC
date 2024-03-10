@@ -18,7 +18,7 @@ HMODULE g_hModule;
 /*void InitializeConsole() {
     FILE* pFile = nullptr;
     AllocConsole();
-    SetConsoleTitle(_XOR_(L"Command Prompt"));
+    SetConsoleTitle(_XOR_(L"Cmd"));
     freopen_s(&pFile, _XOR_("CONOUT$"), _XOR_("w"), stdout);
 }
 
@@ -44,12 +44,9 @@ struct Checkbox {
 /*void displayCheckboxes(const std::vector<Checkbox>& checkboxes, size_t selectedCheckbox) {
     system("cls"); // Clear the console (Windows specific)
 
-    //printf(_XOR_("[Init] - Helldiver 2 PoC DLL Proxy...\n"));
-    //printf(_XOR_("[Init] - Thanks to cfemen and gir489...\n"));
+    //printf(_XOR_("[Init] - Hell...\n"));
 
-    //printf(_XOR_("[Ready] : Select some of the features below by pressing the [Space] key.\n"));
-    //printf(_XOR_("[Ready] : Press [Enter] to run the feature you selected.\n"));
-    //printf(_XOR_("[Ready] : After pressing [Enter], the selected features cannot be changed.\n"));
+    //printf(_XOR_("[Ready] : Select.\n"));
 
     std::cout << _XOR_("Checkboxes:\n");
     for (size_t i = 0; i < checkboxes.size(); ++i) {
@@ -122,9 +119,9 @@ DWORD WINAPI Payload(LPVOID lpParam)
     //Show Console
     //InitializeConsole();
     
-    // Enable Cheats Automatically
+    // Enable  Automatically
     //displayCheckboxes(checkboxes, selectedCheckbox);
-    //std::cout << _XOR_("Activate Cheat Feature.\n");
+    //std::cout << _XOR_("Activate.\n");
     
     /*do {
 
@@ -206,7 +203,7 @@ DWORD WINAPI Payload(LPVOID lpParam)
 
                     gData.InfHealth = !gData.InfHealth;
                     //create trampolin
-                    //printf(_XOR_("[Active] Infinite Health\n"));
+                    //printf(_XOR_("[Active]  Health\n"));
                 }
             }
 
